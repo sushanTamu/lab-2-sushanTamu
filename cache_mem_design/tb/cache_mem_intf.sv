@@ -6,8 +6,10 @@ interface cache_mem_intf (input clk, input rst_n);
   logic wr_en;
 
 //TO DO : Define modport for tb   
+modport tb (output addr, data_in, wr_en, rd_en, input data_out, import mem_write, import mem_read);
 
 //TO DO : Define modport for mem  
+modport mem (input rd_en, wr_en, data_in, addr, output data_out);
               
 task mem_write (input logic [4:0] addr_in, input logic [7:0] data_wr);
   @(negedge clk);
