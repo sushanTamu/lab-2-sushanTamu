@@ -23,4 +23,4 @@
 
 -> Write operation :  addr=2 and data_in=0A 
 
--> Read operation :  addr=0
+-> Read operation :  addr=2
